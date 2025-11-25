@@ -1,51 +1,54 @@
----
 
-# 📘 **Matrimorphosis Learning – Full Stack Application **
-**AIM for Full Stack Capstone Project**
+# 📘 **Matrimorphosis Learning – Full Stack Application**
 
-A complete full-stack learning project built using **Angular**, **Node.js (Express)**, **TypeScript**, **MySQL**, and **Unit Testing** using **Jest + JSDOM**.
+## 🎯 **AIM for Full Stack Capstone Project**
+To design and develop a complete full-stack web application using **Angular**, **Node.js (Express)**, **TypeScript**, and **MySQL**, along with **Unit Testing** using **Jest + JSDOM**, ensuring seamless frontend–backend integration, efficient data management, and reliable application performance.
 
-This repository is designed as a practical learning path that covers both **frontend** and **backend**, along with **database integration** and **testing**.
+A complete full-stack learning project built using:
+
+- **Angular** (Frontend)
+- **Node.js + Express + TypeScript** (Backend)
+- **MySQL** (Database)
+- **Jest + JSDOM** (Unit Testing)
+
+This repository is designed as a practical learning path that covers **frontend**, **backend**, **database integration**, and **testing fundamentals**.
 
 ---
 
 # 🌟 **Tech Stack Overview**
 
 ### 🎨 Frontend: **Angular**
-
-* Angular 17+
-* TypeScript
-* Components, Services, Routing
-* Reactive Forms
-* API Integration
+- Angular 17+
+- TypeScript
+- Components, Services, Routing
+- Reactive Forms
+- API Integration
 
 ### ⚙️ Backend: **Node.js + Express + TypeScript**
-
-* Express.js server
-* REST API endpoints
-* TypeScript-based backend
-* MySQL DB connection using `mysql2`
-* `.env` configuration for DB credentials
+- Express.js server
+- REST API endpoints
+- TypeScript-based backend
+- MySQL connection using `mysql2`
+- `.env` configuration for sensitive credentials
 
 ### 🗄️ Database: **MySQL**
-
-* MySQL Workbench
-* food_delivery database
-* CRUD operations
-* Connection pooling
+- MySQL Workbench
+- `food_delivery` database
+- CRUD operations
+- Connection pooling
 
 ### 🧪 Unit Testing: **Jest + TypeScript + JSDOM**
-
-* DOM testing (HTML structure tests)
-* TypeScript test setup
-* Jest environment configuration
-* Successfully tested sample HTML
+- HTML DOM testing
+- JSDOM environment configuration
+- TypeScript test setup
+- Verified working test cases
 
 ---
 
 # 📂 **Project Structure**
 
 ```
+
 Full Stack Matrimorphosis/
 │
 ├── Angular_Matrimorphosis/       # Angular frontend
@@ -72,43 +75,41 @@ Full Stack Matrimorphosis/
 │   └── package.json
 │
 └── README.md
-```
+
+````
 
 ---
 
 # 🚀 **How to Run the Project**
 
----
-
 ## 🔹 **1. Frontend (Angular)**
 
-### Install dependencies:
-
-```
+Install dependencies:
+```sh
 cd Angular_Matrimorphosis
 npm install
-```
+````
 
-### Start Angular app:
+Run Angular app:
 
-```
+```sh
 ng serve -o
 ```
 
-Runs at: **[http://localhost:4200](http://localhost:4200)**
+👉 Runs at **[http://localhost:4200](http://localhost:4200)**
 
 ---
 
 ## 🔹 **2. Backend (Express + TypeScript)**
 
-### Install dependencies:
+Install dependencies:
 
-```
+```sh
 cd Backend
 npm install
 ```
 
-### Create `.env` file:
+Create `.env` file:
 
 ```
 DB_HOST=127.0.0.1
@@ -119,13 +120,13 @@ DB_PORT=3306
 PORT=3000
 ```
 
-### Start backend server:
+Start backend server:
 
-```
+```sh
 npx ts-node server.ts
 ```
 
-Runs at: **[http://localhost:3000](http://localhost:3000)**
+👉 Backend runs at **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
@@ -158,16 +159,16 @@ INSERT INTO food_items (name, category, price) VALUES
 
 # 🧪 **Unit Testing (Jest + TypeScript + JSDOM)**
 
-### Install dependencies:
+Install dependencies:
 
-```
+```sh
 cd TEST_CASES_TO_EXPLAIN
 npm install
 ```
 
-### Run tests:
+Run tests:
 
-```
+```sh
 npm test
 ```
 
@@ -183,43 +184,29 @@ PASS ./sample.test.ts
 
 # 🛠️ **Features Implemented**
 
-### ✔ Angular UI with components & services
-
-### ✔ MySQL database integration
-
-### ✔ Node.js API with TypeScript
-
-### ✔ CORS-enabled API communication
-
-### ✔ HTML DOM validation using Jest + JSDOM
-
-### ✔ Clean folder structure
-
-### ✔ Working CRUD endpoints
-
-### ✔ Environment variable support (dotenv)
+✔ Angular UI with components & services
+✔ MySQL database integration
+✔ Node.js REST API with TypeScript
+✔ CORS-enabled communication
+✔ HTML DOM validation using Jest + JSDOM
+✔ Full CRUD functionality
+✔ Environment variable support (dotenv)
+✔ Clean folder structure for enterprise-level apps
 
 ---
 
 # 📈 **Learning Outcomes**
 
-By working on this project, you learn:
+You will learn:
 
-### 🔹 Full-stack application flow
-
-### 🔹 How Angular interacts with REST APIs
-
-### 🔹 How to build APIs using Express
-
-### 🔹 How to structure a TypeScript backend
-
-### 🔹 How to connect Node.js with MySQL
-
-### 🔹 How to write test cases using Jest
-
-### 🔹 How to validate HTML DOM using JSDOM
-
-### 🔹 How to push projects to GitHub
+* Full-stack workflow (frontend → backend → database)
+* Angular component-based architecture
+* REST API development in Express
+* TypeScript backend structure
+* MySQL database connectivity
+* Writing Jest + JSDOM test cases
+* HTML DOM testing
+* Git & GitHub version control
 
 ---
 
@@ -227,7 +214,10 @@ By working on this project, you learn:
 
 **Geethapriya S L**
 Full Stack Developer (Learning Track)
-Angular | Node.js | TypeScript | MySQL | Jest Testing
+*Angular | Node.js | TypeScript | MySQL | Jest | JSDOM*
 
 ---
 
+
+Just tell me **“Add badges”** or **“Add architecture diagram”**!
+```
