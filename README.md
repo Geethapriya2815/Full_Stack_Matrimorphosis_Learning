@@ -1,64 +1,58 @@
+# 📘 **Full Stack Matrimorphosis Learning Repository**
 
-# 📘 **Matrimorphosis Learning – Full Stack Application**
+This repository is a **complete full-stack learning collection**, containing all major concepts, assignments, tasks, and a capstone project.  
+It includes **Angular**, **Node.js (with TypeScript)**, **Express**, **MySQL**, **NgRx**, and **Unit Testing** using **Jest + JSDOM**.
 
-## 🎯 **AIM for Full Stack Capstone Project**
-To design and develop a complete full-stack web application using **Angular**, **Node.js (Express)**, **TypeScript**, and **MySQL**, along with **Unit Testing** using **Jest + JSDOM**, ensuring seamless frontend–backend integration, efficient data management, and reliable application performance.
-
-A complete full-stack learning project built using:
-
-- **Angular** (Frontend)
-- **Node.js + Express + TypeScript** (Backend)
-- **MySQL** (Database)
-- **Jest + JSDOM** (Unit Testing)
-
-This repository is designed as a practical learning path that covers **frontend**, **backend**, **database integration**, and **testing fundamentals**.
+This repo serves as a **learning portfolio**, showcasing continuous progress from basic concepts to advanced full-stack application development.
 
 ---
 
-# 🌟 **Tech Stack Overview**
+# 🎯 **AIM of the Full Stack Capstone Project**
 
-### 🎨 Frontend: **Angular**
-- Angular 17+
-- TypeScript
-- Components, Services, Routing
-- Reactive Forms
-- API Integration
-
-### ⚙️ Backend: **Node.js + Express + TypeScript**
-- Express.js server
-- REST API endpoints
-- TypeScript-based backend
-- MySQL connection using `mysql2`
-- `.env` configuration for sensitive credentials
-
-### 🗄️ Database: **MySQL**
-- MySQL Workbench
-- `food_delivery` database
-- CRUD operations
-- Connection pooling
-
-### 🧪 Unit Testing: **Jest + TypeScript + JSDOM**
-- HTML DOM testing
-- JSDOM environment configuration
-- TypeScript test setup
-- Verified working test cases
+To design and develop an end-to-end full-stack application using **Angular**, **Node.js (Express + TypeScript)**, and **MySQL**, supported by **unit testing** using **Jest + JSDOM**, demonstrating complete mastery of frontend, backend, database, and testing workflows.
 
 ---
 
-# 📂 **Project Structure**
+# 🌟 **What This Repository Contains**
+
+### ✔ Angular Projects  
+- Component-based learning  
+- Services, Routing, Reactive Forms  
+- Cart Explorer App  
+- NgRx State Management Project  
+- Food Application (Part 1)
+
+### ✔ Backend (Node.js + Express + TypeScript)  
+- REST APIs  
+- MySQL database integration  
+- Environment configuration  
+- Core module fundamentals  
+- TypeScript-based server structure
+
+### ✔ Capstone: Full Stack Project  
+- **Angular Frontend**  
+- **Express + TypeScript Backend**  
+- **MySQL** database with CRUD  
+- **Unit Testing**  
+
+### ✔ Unit Testing (Jest + TypeScript + JSDOM)
+- HTML DOM structure testing  
+- Jest configuration  
+- TypeScript test environment  
+- JSDOM setup  
+- Working sample test suite  
+
+---
+
+# 📁 **Folder Structure Overview**
 
 ```
 
-Full Stack Matrimorphosis/
+Full_Stack_Matrimorphosis_Learning/
 │
-├── Angular_Matrimorphosis/       # Angular frontend
-│   ├── src/
-│   ├── components/
-│   ├── services/
-│   ├── environments/
-│   └── ...
+├── Angular_Matrimorphosis/        # Main Angular application
 │
-├── Backend/                      # Node.js + Express backend
+├── Backend/                       # Node.js + TypeScript backend
 │   ├── server.ts
 │   ├── routes/
 │   ├── controllers/
@@ -66,7 +60,7 @@ Full Stack Matrimorphosis/
 │   ├── .env
 │   └── ...
 │
-├── TEST_CASES_TO_EXPLAIN/        # Unit testing (Jest + TS + JSDOM)
+├── TEST_CASES_TO_EXPLAIN/         # Unit Testing using Jest + TS + JSDOM
 │   ├── sample.html
 │   ├── sample.test.ts
 │   ├── jest.config.js
@@ -74,150 +68,139 @@ Full Stack Matrimorphosis/
 │   ├── tsconfig.json
 │   └── package.json
 │
-└── README.md
+├── Cart Explorer App (Angular Assignment)
+│
+├── FoodAppPart1/
+│
+├── NgRxUsingFoodTheme/            # NgRx state management project
+│
+├── Node-with-ts-main/             # Core Node + TypeScript learning
+│
+└── README.md                      # You are here!
 
-````
+```
 
 ---
 
-# 🚀 **How to Run the Project**
+# 🚀 **How to Run the Major Modules**
 
-## 🔹 **1. Frontend (Angular)**
+## 🔹 **1. Angular Projects**
 
-Install dependencies:
-```sh
-cd Angular_Matrimorphosis
-npm install
-````
-
-Run Angular app:
-
-```sh
-ng serve -o
 ```
 
-👉 Runs at **[http://localhost:4200](http://localhost:4200)**
+cd Angular_Matrimorphosis
+npm install
+ng serve -o
+
+```
 
 ---
 
 ## 🔹 **2. Backend (Express + TypeScript)**
 
-Install dependencies:
+```
 
-```sh
 cd Backend
 npm install
-```
-
-Create `.env` file:
-
-```
-DB_HOST=127.0.0.1
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=food_delivery
-DB_PORT=3306
-PORT=3000
-```
-
-Start backend server:
-
-```sh
 npx ts-node server.ts
-```
 
-👉 Backend runs at **[http://localhost:3000](http://localhost:3000)**
+````
+
+Backend runs at **http://localhost:3000**
 
 ---
 
-# 🗄️ **MySQL Setup**
+## 🔹 **3. MySQL Database**
 
-Run in MySQL Workbench:
+Create database:
 
 ```sql
 CREATE DATABASE food_delivery;
+````
 
+Use table:
+
+```sql
 USE food_delivery;
 
 CREATE TABLE food_items (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  category VARCHAR(50) NOT NULL,
-  price DECIMAL(10,2) NOT NULL
+  name VARCHAR(100),
+  category VARCHAR(50),
+  price DECIMAL(10,2)
 );
-
-INSERT INTO food_items (name, category, price) VALUES
-('Margherita Pizza', 'Main Course', 299.99),
-('Veg Burger', 'Snacks', 149.50),
-('French Fries', 'Snacks', 99.00),
-('Paneer Butter Masala', 'Main Course', 250.00),
-('Coca Cola', 'Beverage', 49.00),
-('Chocolate Brownie', 'Dessert', 120.00);
 ```
 
 ---
 
-# 🧪 **Unit Testing (Jest + TypeScript + JSDOM)**
+## 🔹 **4. Unit Testing (Jest + TypeScript + JSDOM)**
 
-Install dependencies:
-
-```sh
+```
 cd TEST_CASES_TO_EXPLAIN
 npm install
-```
-
-Run tests:
-
-```sh
 npm test
 ```
 
-Expected output:
+Expected:
 
 ```
-PASS ./sample.test.ts
+PASS sample.test.ts
 ✓ should contain a <ul> element
-✓ should contain exactly 3 <li> elements
+✓ should contain exactly 3 <li>
 ```
 
 ---
 
-# 🛠️ **Features Implemented**
+# 🛠 **Skills Practiced in This Repository**
 
-✔ Angular UI with components & services
-✔ MySQL database integration
-✔ Node.js REST API with TypeScript
-✔ CORS-enabled communication
-✔ HTML DOM validation using Jest + JSDOM
-✔ Full CRUD functionality
-✔ Environment variable support (dotenv)
-✔ Clean folder structure for enterprise-level apps
+### 🔹 Frontend Development
+
+* Angular components
+* Routing
+* Services & HTTP
+* Forms & Validation
+* State Management (NgRx)
+
+### 🔹 Backend Development
+
+* Express API design
+* TypeScript backend structure
+* MySQL CRUD operations
+* Environment config with dotenv
+
+### 🔹 Testing
+
+* Jest configuration
+* JSDOM HTML testing
+* TypeScript-based test cases
+
+### 🔹 Tools & Practices
+
+* GitHub version control
+* Clean folder structuring
+* Modular development
+* Debugging backend + frontend
 
 ---
 
 # 📈 **Learning Outcomes**
 
-You will learn:
+By working through this repo, the learner gains:
 
-* Full-stack workflow (frontend → backend → database)
-* Angular component-based architecture
-* REST API development in Express
-* TypeScript backend structure
-* MySQL database connectivity
-* Writing Jest + JSDOM test cases
-* HTML DOM testing
-* Git & GitHub version control
+* Complete understanding of **full-stack architecture**
+* Ability to build, test, deploy Angular apps
+* Ability to design REST APIs in Express
+* Strong TypeScript foundation (frontend + backend)
+* Practical MySQL database skills
+* Hands-on experience with Jest testing
+* Real-world full-stack development experience
 
 ---
 
 # ❤️ **Author**
 
 **Geethapriya S L**
-Full Stack Developer (Learning Track)
-*Angular | Node.js | TypeScript | MySQL | Jest | JSDOM*
+Full Stack Developer (Learning Path)
+*Angular | Node.js | TypeScript | Express | MySQL | NgRx | Jest + JSDOM*
 
 ---
-
-
-Just tell me **“Add badges”** or **“Add architecture diagram”**!
-```
