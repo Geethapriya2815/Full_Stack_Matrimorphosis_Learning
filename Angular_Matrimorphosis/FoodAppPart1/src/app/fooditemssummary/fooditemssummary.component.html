@@ -1,0 +1,7 @@
+<div class="summary-card">
+  <h2>{{ foodName }}</h2>
+  <img [src]="foodImage" alt="{{ foodName }}" width="200" />
+  <p>Price: ₹{{ foodPrice }}</p>
+  <p>Discounted Price: ₹{{ finalPrice | number: '1.2-2' }}</p>
+  <button (click)="placeOrder()">Order</button>
+</div>

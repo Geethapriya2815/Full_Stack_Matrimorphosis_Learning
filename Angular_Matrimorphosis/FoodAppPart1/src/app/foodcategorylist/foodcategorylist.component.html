@@ -1,0 +1,18 @@
+<!-- Modern Card View -->
+
+
+<div class="categories">
+  <h2>Categories</h2>
+  <ul>
+    <li *ngFor="let cat of categories" appHighlight>
+      {{ cat.name }}
+      <ul>
+        <li *ngFor="let item of cat.items" appHighlight>{{ item }}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<ng-template #hideItem>
+  <p>There are no varieties present in this food category.</p>
+</ng-template>
